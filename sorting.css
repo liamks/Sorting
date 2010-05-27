@@ -1,0 +1,41 @@
+body{
+  text-align: center;
+}
+
+
+#outer{
+  margin: auto;
+  text-align: left;
+  width: 1024px;
+}
+
+#container{
+  margin: 12px;
+  width: 1000px;
+  height: 800px;
+  position: relative;
+}
+
+.rectangle{
+  width: 19px;
+  border: 1px solid black;
+  margin: 2px;
+  background: black;
+  position: absolute;
+}
+
+.clear{
+clear: both;
+}
+
+.highlight{
+  background: red;
+}
+
+.current{
+  background: blue;
+}
+
+.current_j{
+  background: purple;
+}

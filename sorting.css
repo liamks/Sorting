@@ -9,6 +9,16 @@ body{
   width: 1024px;
 }
 
+#controls {
+  border: 1px solid #2B8E00;
+  background: #92ED6B;
+  padding: 4px;
+
+}
+
+select {
+  padding: 1px 0;
+}
 #container{
   margin: 12px;
   width: 1000px;

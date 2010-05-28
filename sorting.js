@@ -54,10 +54,10 @@ function sortit() {
   bubblesort($('#container div'));
 }
 
-function init(){
-  $('#sort').click(sortit);
+function reset(){
   var h = 0;
   var x = 0;
+  $('#container').empty();
   for(var i=0;i<NUM_RECTANGLES;i++){
     h = Math.floor(Math.random()*MAXHEIGHT);
     $('#container').append(
@@ -66,6 +66,15 @@ function init(){
         class:'rectangle',
         style:'height:' + String(h) + 'px; left:' + String(x) + 'px;'}
       ).data({'height':h,'x':x}));
-    x += RECT_WIDTH + 5;
+    x += RECT_WIDTH + 4;
   }
 }
+
+function init(){
+  reset();
+  $('#sort').click(sortit);
+  $('#reset').click(reset);
+
+}
+
+$(document).ready(init);
